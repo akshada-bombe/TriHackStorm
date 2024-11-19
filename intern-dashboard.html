@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Dashboard</title>
+    <link rel="stylesheet" href="intern-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header>
+            <h1>Internship Portal - Dashboard</h1>
+            <nav>
+                <button class="btn logout" onclick="logout()">Logout</button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Profile Section -->
+            <section class="profile">
+                <h2>Welcome, <span id="internName">John Doe</span></h2>
+                <p><strong>Company:</strong> XYZ Corp</p>
+                <p><strong>Mentor:</strong> Jane Smith</p>
+                <p><strong>Internship Duration:</strong> Jan 2024 - June 2024</p>
+            </section>
+
+            <!-- Progress Section -->
+            <section class="progress">
+                <h3>Your Internship Progress</h3>
+                <div class="progress-cards">
+                    <div class="card">
+                        <h4>Fortnightly Report</h4>
+                        <p>Status: <span class="status completed">Completed</span></p>
+                        <button class="btn" onclick="openModal('Fortnightly Report', 'Details about your fortnightly report.')">View Report</button>
+                    </div>
+                    <div class="card">
+                        <h4>Assignments</h4>
+                        <p>Status: <span class="status pending">Pending</span></p>
+                        <button class="btn" onclick="openModal('Assignments', 'Details about your pending assignments.')">View Assignments</button>
+                    </div>
+                    <div class="card">
+                        <h4>Mentor Evaluation</h4>
+                        <p>Status: <span class="status pending">Pending</span></p>
+                        <button class="btn" onclick="openModal('Mentor Evaluation', 'Submit your mentor evaluation.')">Submit Evaluation</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notifications Section -->
+            <section class="notifications">
+                <h3>Notifications</h3>
+                <ul>
+                    <li><strong>Reminder:</strong> Submit your fortnightly report by tomorrow.</li>
+                    <li><strong>New Assignment:</strong> Complete the assigned task by Friday.</li>
+                    <li><strong>Evaluation Reminder:</strong> Industry mentor evaluation is due at the end of your internship.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal for Viewing Reports/Assignments -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Modal Title</h2>
+            <p id="modalContent">Content goes here...</p>
+        </div>
+    </div>
+
+    <script src="intern-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Dashboard</title>
+    <link rel="stylesheet" href="mentor-dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header>
+            <h1>Internship Portal - Mentor Dashboard</h1>
+            <nav>
+                <button class="btn logout" onclick="logout()">Logout</button>
+            </nav>
+        </header>
+
+        <!-- Intern List Section -->
+        <section class="intern-list">
+            <h3>Your Assigned Interns</h3>
+            <ul id="internList">
+                <li>
+                    <span>Intern 1 - <strong>John Doe</strong></span>
+                    <button class="btn view-report" onclick="viewReport('John Doe')">View Report</button>
+                    <button class="btn evaluate" onclick="openEvaluationForm('John Doe')">Evaluate</button>
+                </li>
+                <li>
+                    <span>Intern 2 - <strong>Jane Smith</strong></span>
+                    <button class="btn view-report" onclick="viewReport('Jane Smith')">View Report</button>
+                    <button class="btn evaluate" onclick="openEvaluationForm('Jane Smith')">Evaluate</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Evaluation Form Section -->
+        <section id="evaluationForm" class="hidden">
+            <h3>Mentor Evaluation for <span id="internName"></span></h3>
+            <textarea id="evaluationContent" placeholder="Write your evaluation here..." rows="5"></textarea>
+            <button class="btn submit" onclick="submitEvaluation()">Submit Evaluation</button>
+        </section>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="mentor-dashboard.js"></script>
+</body>
+</html>

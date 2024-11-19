@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.dashboard-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.logout {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Intern List */
+.intern-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.intern-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intern-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.view-report {
+  background-color: #007BFF;
+}
+
+.btn.evaluate {
+  background-color: #FF9800;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Evaluation Form */
+#evaluationForm {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#evaluationForm h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#evaluationContent {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.btn.submit {
+  background-color: #4CAF50;
+}
